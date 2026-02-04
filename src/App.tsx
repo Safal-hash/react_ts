@@ -2,16 +2,19 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Test from './test'
+import Navbar from './navbar'
+import Card from './Card'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='h-screen flex justify-center items-center bg-[#161616]'>
-   <h1 className='text-3xl text-white/95 font-medium  '>
-     Home to all my <span className='text-blue-900 underline cursor-pointer'>Elements</span> and <span className='text-blue-900 underline cursor-pointer'>Components</span>
-   </h1>
-
+    
+    
+    <div className='h-screen flex flex-col items-center text-white/95 font-inter  gap-4  p-4'>
+  <Navbar/>
+   <Card/>
     </div>
   )
 }

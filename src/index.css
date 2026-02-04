@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700&display=swap');
 @import "tailwindcss";
 
 
 
+@theme{
+    --font-inter: "Inter", sans-serif;
+    --font-weight-heavy: 500;
+   
+    --animate-blink: blink 1.2s ease-out infinite;
+
+    @keyframes blink {
+    0%, 59% { opacity: 1; }
+    60%, 100% { opacity: 0; }
+}
+}
+
 #root{
   padding: 0px;
   margin:0px;
+  background-color: #161616;
 }
