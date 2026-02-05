@@ -1,6 +1,11 @@
 import React from 'react'
 
-const Card = () => {
+interface CardProps {
+  date? : number ,
+
+}
+
+const Card = (props:CardProps) => {
   return (
   <div className="flex flex-col px-2.5 py-4 w-70 bg-white justify-between gap-2 rounded-3xl ">
       
@@ -9,7 +14,7 @@ const Card = () => {
           Lush and Green
         </div>
         <div className="bg-black/80 rounded-lg p-1 text-white">
-          Jan <span className="bg-white text-black px-2 py-1 rounded-lg">25</span>
+          Jan <span className="bg-white text-black px-2 py-1 rounded-lg">{props.date || 22}</span>
         </div>
       </div>
 
@@ -32,7 +37,7 @@ const Card = () => {
             📍 Tokha Village <br /> Kathmandu,Nepal
         </span>
       </div>
-
+   
     </div>
   )
 }
