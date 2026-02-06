@@ -5,6 +5,7 @@ import './App.css'
 import Test from './components/test'
 import Navbar from './components/navbar'
 import Card from './components/Card'
+import PasswordGenerator from './components/PasswordGenerator'
 
 function App() {
  
@@ -14,8 +15,9 @@ function App() {
     <>
     <div className='h-screen flex flex-col items-center text-white/95 font-inter   gap-4  p-4'>
   <Navbar/>
-   <Card  />
+
  <Test/>
+ <PasswordGenerator/>
     </div>
       
   </>
