@@ -41,7 +41,7 @@ const CurrencyConverter = () => {
                             label="From"
                             amount={amount}
                             currencyOptions={options}
-                            onCurrencyChange={(currency) => setAmount(amount)}
+                            onCurrencyChange={(currency) => setFrom(currency) }
                             selectCurrency={from}
                             onAmountChange={(amount) => setAmount(amount)}
                             className='text-blue-400'
