@@ -13,10 +13,10 @@ function App() {
   return (
     
     <>
-    <div className='h-screen flex flex-col items-center text-white/95 font-inter   gap-4  p-4'>
+    <div className='h-screen flex flex-col items-center bg-stone-800 text-white/95 font-inter   gap-4  p-4'>
   <Navbar/>
 
- <Test/>
+
  <PasswordGenerator/>
     </div>
       
