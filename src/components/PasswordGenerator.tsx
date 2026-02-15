@@ -46,11 +46,11 @@ const PasswordGenerator = () => {
   return (
     <>
       <div className="bg-[#eff2ef] p-4 flex flex-col gap-2.5 h-fit jus rounded-2xl items-center">
-        <div className="flex justify-center items-center gap-0 w-auto border border-black overflow-hidden rounded-full">
+        <div className="flex justify-center items-center gap-0 border border-black overflow-hidden w-full rounded-full">
           <input
             type="text"
             placeholder="Password"
-            className="bg-white select-all selection:bg-gray-500  text-black p-2 rounded-2xl w-auto tracking-wider text-sm rounded-r-none outline-none "
+            className="bg-white select-all selection:bg-gray-500  text-black p-2 rounded-2xl w-max tracking-wider text-sm rounded-r-none outline-none "
             value={password}
             size={Math.max(password.length + 2, 14)}
             readOnly
@@ -65,7 +65,7 @@ const PasswordGenerator = () => {
           </button>
         </div>
 
-        <div className="text-[#373737] relative">
+        <div className="text-[#373737] w-full relative">
           <label htmlFor="" className="text-sm">
             {" "}
             Password Length: <span className="text-pink-950 font-semibold">{length}</span>
@@ -79,7 +79,7 @@ const PasswordGenerator = () => {
             onChange={(e) => {
               setLength(Number(e.target.value));
             }}
-            className="h-max rounded-full accent-pink-950 appearance-none bg-gray-300"
+            className="h-max rounded-full accent-pink-950 appearance-none w-full bg-gray-300"
           />
           <span className="text-xs text-body absolute start-0 -bottom-3.5">
             8
