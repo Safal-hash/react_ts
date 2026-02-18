@@ -18,7 +18,7 @@ const CurrencyConverter = () => {
         setFrom (to)
         setTo (from)
         setConvertedAmount (amount)
-        setAmount (convertedAmount)
+        setAmount (Number(convertedAmount.toFixed(2)))
     }
 
    const convert = () => setConvertedAmount(amount * currencyInfo[to])
@@ -59,7 +59,7 @@ const CurrencyConverter = () => {
                     <div className="w-full mt-1 mb-4">
                         <InputBox
                             label="To"
-                            amount={convertedAmount}
+                            amount={Number(convertedAmount.toFixed(2))}
                             currencyOptions={options}
                             onCurrencyChange={(currency) => setTo(currency)}
                             selectCurrency={to}

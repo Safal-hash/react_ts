@@ -8,20 +8,21 @@ import Card from './components/Card'
 import PasswordGenerator from './components/PasswordGenerator'
 import CurrencyConverter from './components/CurrencyConverter'
 
-function App() {
- 
+import { Outlet } from 'react-router-dom'
+import React from 'react'
 
+const App = () => {
   return (
-    
     <>
-    <div className='h-screen flex flex-col items-center bg-stone-800 text-white/95 font-inter   gap-4  p-4'>
-  <Navbar/>
-
-    <CurrencyConverter/>
+    
+    <div className='h-screen bg-gray-800'>
+    <Navbar/>
+    <Outlet />
 
     </div>
-      
-  </>
+
+        
+    </>
   )
 }
 

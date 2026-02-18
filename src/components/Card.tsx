@@ -1,13 +1,14 @@
 import React from 'react'
-
+import { useParams } from 'react-router-dom'
 interface CardProps {
   date? : number ,
 
 }
 
 const Card = (props:CardProps) => {
+  const {userid} = useParams()
   return (
-  <div className="flex flex-col px-2.5 py-4 w-70 bg-white justify-between gap-2 rounded-3xl ">
+  <div className="flex flex-col px-2.5 py-4 w-70 bg-white justify-between gap-2 rounded-3xl mt-4 ">
       
       <div className="flex justify-between gap-10 text-[.65rem] ">
         <div className="bg-black/80 rounded-lg p-1 text-white">
@@ -37,7 +38,9 @@ const Card = (props:CardProps) => {
             📍 Tokha Village <br /> Kathmandu,Nepal
         </span>
       </div>
-   
+    <span>
+      {userid}
+    </span>
     </div>
   )
 }

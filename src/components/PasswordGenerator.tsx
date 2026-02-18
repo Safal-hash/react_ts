@@ -45,8 +45,8 @@ const PasswordGenerator = () => {
 
   return (
     <>
-      <div className="bg-[#eff2ef] p-4 flex flex-col gap-2.5 h-fit jus rounded-2xl items-center">
-        <div className="flex justify-center items-center gap-0 border border-black overflow-hidden w-full rounded-full">
+      <div className="bg-[#eff2ef] p-4 flex flex-col gap-2.5 h-fit w-fit rounded-2xl items-center mt-4">
+        <div className="flex justify-center items-center gap-0 border border-black overflow-hidden  rounded-full">
           <input
             type="text"
             placeholder="Password"
@@ -65,7 +65,7 @@ const PasswordGenerator = () => {
           </button>
         </div>
 
-        <div className="text-[#373737] w-full relative">
+        <div className="text-[#373737]  relative">
           <label htmlFor="" className="text-sm">
             {" "}
             Password Length: <span className="text-pink-950 font-semibold">{length}</span>
