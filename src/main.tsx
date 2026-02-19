@@ -6,6 +6,7 @@ import { createBrowserRouter, createRoutesFromChildren, createRoutesFromElements
 import PasswordGenerator from './components/PasswordGenerator.tsx'
 import Card from './components/Card.tsx'
 import Github, { githubInfoLoader } from './components/github.tsx'
+import Landingpage from './components/Landingpage.tsx'
 
 /* const router = createBrowserRouter([
   {
@@ -29,6 +30,7 @@ import Github, { githubInfoLoader } from './components/github.tsx'
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<App/>}>
+        <Route path="" element={<Landingpage/>}/>
         <Route path='PasswordGen' element={<PasswordGenerator/>}/>
         <Route path='Card' element={<Card/>}/>
         <Route path='user/:userid' element={<Card/>}/>

@@ -10,19 +10,22 @@ import CurrencyConverter from './components/CurrencyConverter'
 
 import { Outlet } from 'react-router-dom'
 import React from 'react'
+import Footer from './components/Footer'
+import UserContextProvider from './context/UserContextProvider'
+import Login from './components/Login'
+import Profile from './components/Profile'
+import Landingpage from './components/Landingpage'
 
 const App = () => {
   return (
-    <>
-    
-    <div className='h-screen bg-gray-800'>
-    <Navbar/>
-    <Outlet />
 
-    </div>
-
+    <div className='min-h-screen bg-gray-700'>   
+  <Navbar />
+ <Outlet />
+ <Footer />
+     </div>
         
-    </>
+
   )
 }
 

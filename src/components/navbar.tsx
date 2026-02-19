@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
    <div
-      className="w-full p-1 h-fit sticky z-999 top-2 rounded-4xl bg-transparent gap-4 flex justify-center items-center"
+      className=" w-full fixed z-999 top-2 rounded-4xl bg-transparent gap-4 flex justify-center items-center"
     >
      
       <div className="bg-white rounded-full p-1 cursor-pointer">

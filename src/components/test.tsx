@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 
@@ -5,6 +6,8 @@ const test = () => {
   const [color, setColor] = useState<string>("olive");
   const body= document.getElementById("root");
   body.style.backgroundColor  = color;
+
+
   return (
     <>
       <footer className="fixed bottom-10 w-fit text-white bg-white rounded-2xl flex gap-4 justify-evenly px-4 py-2">
