@@ -26,7 +26,7 @@ const App = () => {
   );
   return (
     <div className="flex flex-col h-screen items-center  gap-2 font-geist bg-neutral-900 justify-center">
-      <div className="flex justify-between w-md  gap-4">
+      <div className="flex justify-evenly md:justify-between w-sm md:w-md  md:gap-4">
         <h1 className="text-9xl font-medium text-green-400">W</h1>
 
         <h1 className="text-9xl font-medium text-yellow-400">I</h1>
